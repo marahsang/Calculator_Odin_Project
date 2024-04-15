@@ -19,8 +19,6 @@ function add(a, b) {
     return a % b
   }
 
-  console.log(modulo(5, 3))
-
   function operate(a, operator, b) {
     if (operator == '+') {
       return add(a, b)   
@@ -31,7 +29,7 @@ function add(a, b) {
     else if (operator == 'x') {
       return multiply(a, b) 
     }
-    else if (operator == '÷') {
+    else if (operator == '/') {
         return divide(a, b)
       } else if (operator == '%') {
         return modulo(a, b)
