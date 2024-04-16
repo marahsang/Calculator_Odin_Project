@@ -1,3 +1,24 @@
+const buttons = document.querySelectorAll('button')  
+const display = document.querySelector('.number-on-screen') 
+ 
+let storedNumber = '' 
+let clickedOperator = '' 
+
+let newInput = false
+let didEquals = false 
+
+function displayResult(operator) { 
+  if (!storedNumber) { 
+    storedNumber = display.textContent  
+  } 
+  else { 
+    storedNumber = operate(Number(storedNumber), clickedOperator, Number(display.textContent))
+      } 
+  clickedOperator = operator  
+  newInput = true 
+  didEquals = false 
+} 
+
 
 function add(a, b) {
     return a + b
@@ -38,5 +59,5 @@ function add(a, b) {
       return null; 
     } 
   } 
-  
     console.log(operate(15, '/', 3));
+    
