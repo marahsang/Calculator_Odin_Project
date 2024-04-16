@@ -93,3 +93,34 @@ function add(a, b) {
         setDisplay(displayNum)
       } 
     } 
+
+    buttons.forEach(button =>{ 
+      button.addEventListener('click', function(){ 
+          let input = this.textContent 
+                  if (/[0-9\.]/.test(input)) { 
+                                         
+                          if (didEquals) { 
+                  setDisplay(input) 
+                  didEquals = false 
+              } else { 
+              addToDisplay(input) 
+              }
+          } else if (input == 'AC') { 
+              clear() 
+          } else if (input == '=') { 
+                          if (!storedNumber || !clickedOperator) {  
+                  alert('Error: no operation entered. Clearing data')  
+                  clear() 
+              } else { 
+                  storedNumber = operate(Number(storedNumber), clickedOperator, Number(display.textContent))
+                  clickedOperator = ''  
+                  setDisplay(storedNumber) 
+                  storedNumber = ''
+                  didEquals = true  
+              }
+          } 
+          else { 
+              displayResult(input) 
+          } 
+      }) 
+  }); 
