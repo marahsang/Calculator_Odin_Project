@@ -65,3 +65,15 @@ function add(a, b) {
       numberStored = '' 
       operatorStored = ''
     }
+
+    function setDisplay(displayNum) { 
+      displayNum = displayNum.toString()
+  
+      if (displayNum.length > 9) { 
+        displayNum = parseFloat(displayNum) 
+        displayNum = displayNum.toExponential(2) 
+      } 
+      
+      display.textContent = displayNum;  
+    } 
+  
