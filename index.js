@@ -19,7 +19,6 @@ function displayResult(operator) {
   didEquals = false 
 } 
 
-
 function add(a, b) {
     return a + b
   }
@@ -61,3 +60,8 @@ function add(a, b) {
   } 
     console.log(operate(15, '/', 3));
     
+    function clear() {
+      display.textContent = 0 
+      numberStored = '' 
+      operatorStored = ''
+    }
