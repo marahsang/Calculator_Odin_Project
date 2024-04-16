@@ -77,3 +77,19 @@ function add(a, b) {
       display.textContent = displayNum;  
     } 
   
+    function addToDisplay(number) {
+      let displayNum = display.textContent  
+      
+      if(newInput) {  
+        newInput = false 
+        setDisplay(number) 
+      } else if (displayNum == 0) {   
+        setDisplay(number) 
+      } else {
+        if (displayNum.includes('e')) {  
+          displayNum = Number(displayNum);  
+        }  
+        displayNum = displayNum + number
+        setDisplay(displayNum)
+      } 
+    } 
