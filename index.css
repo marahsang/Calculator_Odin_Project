@@ -37,6 +37,9 @@ body {
   align-items: center;
 }
 
+.calculator-row.top {
+    margin-top: -0.8em;
+  }
 
   .calculator-row {
     display: flex;
