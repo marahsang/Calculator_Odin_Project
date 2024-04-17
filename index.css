@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-* {
+
+
+ * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -35,6 +37,15 @@ body {
   align-items: center;
 }
 
+
+  .calculator-row {
+    display: flex;
+    flex-grow: 1;
+    align-self: stretch;
+   
+  }
+  
+
 .calculator-button {
     
     font-size: 100%;
@@ -46,4 +57,4 @@ body {
 
     box-shadow: 1px 1px #76e1ff, -1px -1px #3f009e;
 
-  }
+  } 
