@@ -24,12 +24,11 @@ body {
 }
 
 .calculator-container {
+    display: flex;
   padding: 0.5em;
   border-radius: 0.3em;
   backdrop-filter: blur(14px) brightness(35%);
   width: 30%;
   height: 80%;
-  max-width: 100%;
   position: absolute;
-
 }
