@@ -34,3 +34,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.calculator-button {
+    
+    font-size: 100%;
+    margin: 2px 2px;
+    border-radius: 0.3em;
+    border: 1px solid rgb(6, 114, 236);
+    color: rgb(117, 171, 247);
+    text-shadow: 0.1rem 0.1rem 0.1rem #3f009e;
+
+    box-shadow: 1px 1px #76e1ff, -1px -1px #3f009e;
+
+  }
