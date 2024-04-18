@@ -50,6 +50,8 @@ body {
 }
 
 .number-on-screen {
+  position: relative;
+  top: -13px;
   display: flex;
   justify-content: flex-end;
   align-self: flex-start;
