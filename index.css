@@ -58,7 +58,6 @@ body {
   height: 5%;
   margin: 0;
   padding: 0.5em;
-  box-shadow: 0em 0em #76e1ff;
 }
 
 .calculator-row.top {
@@ -104,9 +103,23 @@ body {
     transform: scale(1.1);
     transition: background-color 0.2s ease-in-out;
   }
- 
-  button:active {
-    box-shadow: 0 0 0.2em 0.1em #76e1ff;
-    text-shadow: 0.1rem 0.1rem 0.1rem #1b2872;
-    transform: scale(1);
+
+  button.operator {
+      
+    color: #e6e6e6; 
+    background-color: MediumSeaGreen; 
+    
+    cursor: pointer; 
+    
   }
+
+  #eq-btn {
+    color: #f9ffff;
+    background-color: hsl(64, 50%, 53%);
+  }
+  
+  #ac-btn {
+     color: #f9ffff;
+    background-color: hsl(224, 30%, 50%);
+  }
+ 
