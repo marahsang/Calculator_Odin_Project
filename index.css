@@ -88,7 +88,7 @@ body {
   text-shadow: 0.1rem 0.1rem 0.1rem #3f009e;
   box-shadow: 1px 1px #76e1ff, -1px -1px #3f009e;
   } 
-  
+
   #eq-btn, #ac-btn {
     flex-basis: 51%;
     font-size: 100%;
@@ -99,4 +99,14 @@ body {
     text-shadow: 0.1rem 0.1rem 0.1rem #3f009e;
     box-shadow: 1px 1px #76e1ff, -1px -1px #3f009e;
   }
+
+  button:hover {
+    transform: scale(1.1);
+    transition: background-color 0.2s ease-in-out;
+  }
  
+  button:active {
+    box-shadow: 0 0 0.2em 0.1em #76e1ff;
+    text-shadow: 0.1rem 0.1rem 0.1rem #1b2872;
+    transform: scale(1);
+  }
