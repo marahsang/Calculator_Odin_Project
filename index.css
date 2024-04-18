@@ -50,6 +50,11 @@ body {
 }
 
 .number-on-screen {
+  position: relative;
+  top: -13px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-start;
   border-top: 2px solid rgb(6, 114, 236);
   border-radius: 0.5em;
   font-size: 100%;
