@@ -31,7 +31,7 @@ function multiply(a, b) {
   }
   
 function divide(a, b) {
-    return a / b
+    return a ÷ b
   }
   
 function modulo(a, b) {
@@ -45,7 +45,7 @@ function modulo(a, b) {
       return subtract(a, b)
     } else if (operator == 'x') {
       return multiply(a, b) 
-    } else if (operator == '/') {
+    } else if (operator == '÷') {
         return divide(a, b)
     } else if (operator == '%') {
         return modulo(a, b)
